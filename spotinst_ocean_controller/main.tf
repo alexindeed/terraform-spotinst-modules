@@ -129,7 +129,7 @@ resource "kubernetes_deployment" "default" {
       spec {
 
         container {
-          image = "spotinst/kubernetes-cluster-controller:1.0.30"
+          image = "${var.image}"
           name  = "spotinst-kubernetes-cluster-controller"
           image_pull_policy = "Always"
 

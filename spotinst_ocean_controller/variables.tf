@@ -9,3 +9,8 @@ variable "spotinst_account" {
 variable "spotinst_cluster_identifier" {
   description = "This identifier should be identical to the clusterIdentifier that was configured on the Elastigroup."
 }
+
+variable "image" {
+  description = "The cluster controller image you wish to use"
+  default = "spotinst/kubernetes-cluster-controller:1.0.30"
+}
